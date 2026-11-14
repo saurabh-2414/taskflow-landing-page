@@ -1,0 +1,181 @@
+/* HOW IT WORKS SECTION */
+
+.how-section {
+  width: 100%;
+  padding: 100px 24px;
+  background: #faf9ff;
+}
+
+.how-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+
+.how-heading {
+  max-width: 650px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.how-heading h2 {
+  color: #19172d;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.how-heading h2 span {
+  color: #7655e8;
+}
+
+.how-heading p {
+  color: #777386;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Steps Grid */
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Step Cards */
+
+.step-card {
+  position: relative;
+  background: #ffffff;
+  padding: 32px;
+  border: 1px solid #eeecf4;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-7px);
+  border-color: #d9ceff;
+  box-shadow: 0 15px 35px rgba(45, 35, 85, 0.08);
+}
+
+/* Step Top */
+
+.step-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.step-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee9ff;
+  color: #7655e8;
+  font-size: 26px;
+  border-radius: 13px;
+}
+
+.step-number {
+  color: #e7e2f3;
+  font-size: 38px;
+  font-weight: 750;
+}
+
+/* Step Content */
+
+.step-card h3 {
+  color: #19172d;
+  font-size: 19px;
+  margin-bottom: 13px;
+}
+
+.step-card p {
+  color: #777386;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Bottom CTA */
+
+.how-cta {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.how-cta p {
+  color: #555166;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.how-cta a {
+  display: inline-block;
+  background: #7655e8;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.how-cta a:hover {
+  background: #6240d0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-section {
+    padding: 65px 18px;
+  }
+
+  .how-heading {
+    margin-bottom: 35px;
+  }
+
+  .how-heading h2 {
+    font-size: 31px;
+  }
+
+  .how-heading p {
+    font-size: 14px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .step-card {
+    padding: 25px;
+  }
+
+  .how-cta {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

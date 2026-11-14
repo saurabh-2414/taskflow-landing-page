@@ -1,0 +1,301 @@
+/* PRICING SECTION */
+
+.pricing-section {
+  width: 100%;
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.pricing-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+
+.pricing-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.pricing-heading h2 {
+  color: #19172d;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.pricing-heading h2 span {
+  color: #7655e8;
+}
+
+.pricing-heading p {
+  color: #777386;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Billing Toggle */
+
+.billing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  margin-top: 28px;
+  background: #f4f2fa;
+  border-radius: 10px;
+}
+
+.billing-toggle button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  color: #777386;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.billing-toggle button.active {
+  background: #ffffff;
+  color: #7655e8;
+  box-shadow: 0 2px 8px rgba(45, 35, 85, 0.08);
+}
+
+.save-badge {
+  background: #e6f8f1;
+  color: #16a67d;
+  padding: 4px 7px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+/* Pricing Grid */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Pricing Cards */
+
+.pricing-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eae7f2;
+  border-radius: 17px;
+  padding: 35px;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(45, 35, 85, 0.09);
+}
+
+.pricing-card.popular {
+  border: 2px solid #7655e8;
+  box-shadow: 0 12px 35px rgba(118, 85, 232, 0.1);
+}
+
+/* Popular Badge */
+
+.popular-badge {
+  position: absolute;
+  top: -14px;
+  right: 25px;
+  background: #7655e8;
+  color: #ffffff;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Plan Details */
+
+.pricing-card h3 {
+  color: #19172d;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.plan-description {
+  color: #858296;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Price */
+
+.plan-price {
+  margin: 28px 0;
+}
+
+.plan-price h2 {
+  color: #19172d;
+  font-size: 40px;
+  font-weight: 750;
+}
+
+.plan-price h2 span {
+  color: #858296;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.plan-price small {
+  display: block;
+  color: #16a67d;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+/* Plan Button */
+
+.plan-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px;
+  background: #f0ecff;
+  color: #7655e8;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 650;
+  transition: all 0.3s ease;
+}
+
+.plan-button:hover {
+  background: #e5ddff;
+}
+
+.plan-button.pro-button {
+  background: #7655e8;
+  color: #ffffff;
+}
+
+.plan-button.pro-button:hover {
+  background: #6240d0;
+}
+
+/* Divider */
+
+.plan-divider {
+  height: 1px;
+  background: #eeecf4;
+  margin: 28px 0;
+}
+
+.pricing-card h4 {
+  color: #29273c;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Plan Features */
+
+.plan-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #555166;
+  font-size: 13px;
+}
+
+.included-icon {
+  color: #16a67d;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.excluded-icon {
+  color: #c4c0ce;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.plan-features .excluded {
+  color: #aaa6b5;
+}
+
+/* Pricing Note */
+
+.pricing-note {
+  text-align: center;
+  margin-top: 35px;
+  color: #858296;
+  font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 80px 22px;
+  }
+
+  .pricing-grid {
+    gap: 22px;
+  }
+
+  .pricing-card {
+    padding: 27px 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-section {
+    padding: 65px 18px;
+  }
+
+  .pricing-heading {
+    margin-bottom: 40px;
+  }
+
+  .pricing-heading h2 {
+    font-size: 31px;
+  }
+
+  .pricing-heading p {
+    font-size: 14px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .pricing-card {
+    padding: 28px 22px;
+  }
+
+  .plan-price h2 {
+    font-size: 36px;
+  }
+
+  .billing-toggle button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+}

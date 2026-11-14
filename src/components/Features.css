@@ -1,0 +1,172 @@
+/*  FEATURES SECTION */
+
+.features-section {
+  width: 100%;
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Heading */
+
+.features-heading {
+  max-width: 650px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+  color: #7655e8;
+  background: #eee9ff;
+  padding: 9px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.features-heading h2 {
+  color: #19172d;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.features-heading h2 span {
+  color: #7655e8;
+}
+
+.features-heading p {
+  color: #777386;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Features Grid */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Feature Card */
+
+.feature-card {
+  background: #ffffff;
+  border: 1px solid #eeecf4;
+  border-radius: 14px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-7px);
+  border-color: #d9ceff;
+  box-shadow: 0 15px 35px rgba(45, 35, 85, 0.08);
+}
+
+/* Feature Icons */
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.feature-icon.purple {
+  background: #eee9ff;
+  color: #7655e8;
+}
+
+.feature-icon.blue {
+  background: #e8f1ff;
+  color: #4786e8;
+}
+
+.feature-icon.green {
+  background: #e6f8f1;
+  color: #16a67d;
+}
+
+.feature-icon.orange {
+  background: #fff1e5;
+  color: #ed9747;
+}
+
+.feature-icon.pink {
+  background: #ffeaf2;
+  color: #e66b9b;
+}
+
+.feature-icon.cyan {
+  background: #e5f8fc;
+  color: #26a6c5;
+}
+
+/* Feature Content */
+
+.feature-card h3 {
+  color: #19172d;
+  font-size: 18px;
+  font-weight: 650;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #777386;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .features-section {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-section {
+    padding: 65px 18px;
+  }
+
+  .features-heading {
+    margin-bottom: 35px;
+  }
+
+  .features-heading h2 {
+    font-size: 31px;
+  }
+
+  .features-heading p {
+    font-size: 14px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+}
