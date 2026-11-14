@@ -36,6 +36,7 @@ View Source Code: https://github.com/saurabh-2414/taskflow-landing-page
 
 ## 📂 Project Structure
 
+```text
 taskflow-landing-page/
 ├── public/
 ├── screenshots/
@@ -62,7 +63,7 @@ taskflow-landing-page/
 ├── index.html
 ├── package.json
 └── README.md
-
+```
 
 ## 🚀 Getting Started
 
