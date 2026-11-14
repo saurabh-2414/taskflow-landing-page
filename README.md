@@ -1,16 +1,142 @@
-# React + Vite
+# TaskFlow – SaaS Project Management Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskFlow is a modern, responsive SaaS landing page for a smart project management platform. It is designed to help teams organize projects, manage tasks, track progress, and collaborate efficiently.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Visit TaskFlow: https://landing-page-taskflow.netlify.app/
 
-## React Compiler
+## 📌 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+View Source Code: https://github.com/saurabh-2414/taskflow-landing-page
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Navigation:** Mobile-friendly navigation with a hamburger menu.
+- **Hero Section:** Attractive introduction with a dashboard-style preview.
+- **Features Section:** Highlights six key project management features.
+- **How It Works:** Explains the platform workflow in three simple steps.
+- **Pricing Section:** Free and Pro plans with monthly and yearly billing options.
+- **Contact Form:** Form validation with a success message.
+- **Footer:** Social media links and useful navigation links.
+- **Responsive Design:** Optimized layouts for desktop, tablet, and mobile devices.
+- **Interactive Elements:** Smooth navigation, buttons, hover effects, and pricing toggle.
+
+## 🛠️ Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Icons
+- React Hooks (`useState`)
+- Vite
+- Netlify (Deployment)
+- Git and GitHub (Version Control)
+
+## 📂 Project Structure
+
+taskflow-landing-page/
+├── public/
+├── screenshots/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Navbar.css
+│   │   ├── Hero.jsx
+│   │   ├── Hero.css
+│   │   ├── Features.jsx
+│   │   ├── Features.css
+│   │   ├── HowItWorks.jsx
+│   │   ├── HowItWorks.css
+│   │   ├── Pricing.jsx
+│   │   ├── Pricing.css
+│   │   ├── Contact.jsx
+│   │   ├── Contact.css
+│   │   ├── Footer.jsx
+│   │   └── Footer.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+git clone https://github.com/saurabh-2414/taskflow-landing-page.git
+
+### 2. Navigate to the project directory
+
+cd taskflow-landing-page
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Start the development server
+
+npm run dev
+
+Open the local URL displayed in your terminal to view the application.
+
+### 5. Create a production build
+
+npm run build
+
+## 🎨 Design Explanation
+
+TaskFlow uses a clean and modern SaaS design with a white and light-lavender background, complemented by purple and blue accent colors.
+
+The hero section features a dashboard-style preview to communicate the product concept visually. Consistent typography, rounded cards, subtle shadows, and spacing create a professional appearance.
+
+The website is divided into reusable React components to maintain a clear and organized structure. CSS Grid, Flexbox, and media queries are used to create responsive layouts across different screen sizes.
+
+Interactive elements such as the mobile navigation menu, pricing toggle, and contact form validation improve the user experience.
+
+## 📱 Responsive Design
+
+The website is designed to work across:
+
+- Desktop screens
+- Tablets
+- Mobile devices
+
+## 🖥️ Project Preview
+
+### Desktop View
+
+![TaskFlow Homepage](./screenshots/desktop-home.png)
+
+![TaskFlow Features](./screenshots/desktop-features.png)
+
+![TaskFlow Pricing](./screenshots/desktop-pricing.png)
+
+![TaskFlow Contact](./screenshots/desktop-contact.png)
+
+### Mobile View
+
+![TaskFlow Mobile Homepage](./screenshots/responsive-home.jpg)
+
+![TaskFlow Mobile Pricing](./screenshots/responsive-price.jpg)
+
+![TaskFlow Mobile Workspace](./screenshots/responsive-workspace.jpg)
+
+## 📬 Contact
+
+**Developer:** Saurabh Prajapati
+
+- GitHub: https://github.com/saurabh-2414
+- LinkedIn: https://www.linkedin.com/in/saurabh-prajapati-226066272/
+
+---
+
+**Note:** The contact form is a frontend demonstration. It performs client-side validation and displays a success message; it does not send or store form submissions.
+
+**Built with React.js and CSS.**
